@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>list in js</title>
+</head>
+<body>
+<script>
+	
+   let listOfnumber = [2,6,4,5,9,3,4,1,5,2,5,2,5]
+   console.log(listOfnumber[2]);
+   console.log(listOfnumber[0]);
+   console.log(listOfnumber[2-1]);
+
+   //null.length ; typeErorr null has no properties
+    let doh = "Doh";
+    console.log(typeof doh.toUpperCase());
+    console.log(doh.toUpperCase());
+
+    let sequance=[1,2,3];
+    sequance.push(4);//on my according push is use for add character or number
+    sequance.push(5);
+    console.log(sequance);
+    console.log(sequance.pop()); //pop is poup up last Elements of list
+    let day1 = {
+    	squirrel: false,
+    	events: ["work", "touched tree", '"pizza']
+
+    };
+    console.log(day1.squirrel);
+    console.log(day1.wolf);
+    day1.wolf=false;
+    console.log(day1.wolf);
+
+    let decription = {
+    	work : "went to work",
+    	"touched tree":"Tuched tree"
+    };
+    let anObject={left: 1, right: 2};
+    console.log(anObject.left);
+    delete anObject.left;//delete the left
+    console.log(anObject.left);
+    console.log("left" in anObject);//if left in anObject than get true else false
+    console.log("right" in anObject);
+    console.log(Object.keys(anObject));
+    //let define new list for new example
+    let ObjectA = {a:1 , b:2};
+    Object.assign(ObjectA, {b: 3, c: 4});
+    //assign is add new values of new keys
+    console.log(ObjectA);
+
+    let journal = [ {events: ["work", "touched tree", "pizza", "running", "television"], squirrel: false}, {events: ["work", "ice cream", "cauliflower", "lasagna", "touched tree", "brushed teeth"], squirrel: false}, {events: ["weekend", "cycling", "break", "peanuts", "beer"], squirrel: true}, /* and so on... */ ];
+    console.log(journal);
+
+
+    let object1 = {value: 10}; 
+    let object2 = object1; 
+    let object3 = {value: 10};
+   
+    console.log(object1==object2);
+    console.log(object1==object3);
+
+    object1.value=15;
+    console.log(object2.value);
+    console.log(object3.value);
+    
+     const score = {visitors:0,home:0};
+     //score.visitors = 1;
+     //this is not allowed
+     //score = {visitors: 1, home: 1};
+
+
+     let journal1=[];
+     function addEntery(events, squirrel){
+     	journal1.push({events, squirrel});
+     }
+     //addEntry(["work", "touched tree", "pizza",
+    //  "running", "television"], false);
+
+    console.log("coconut".indexOf("u")); 
+
+    let name={name: "fraji", age: 30}
+    console.log(name); 
+</script>
+</body>
+</html>

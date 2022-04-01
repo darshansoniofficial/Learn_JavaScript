@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>practice3</title>
+</head>
+<body>
+<p id="peregraph">Hello click me</p>
+
+
+<script>
+     const square = function(x) {
+      return x * x;
+       }
+	console.log(square(4));//output= 4*4 = 16 
+
+	const makenoice=function(){
+		console.log("kharrrrrrrr kharrrrr");
+	}
+		makenoice();//output = kharrrrrrrr kharrrrr
+
+
+		const power = function(base, exponet){
+			let result = 1;
+			for (let i=0; i<exponet; i++){
+				result *= base;
+			};
+			return result;	
+		}
+	
+	console.log(power(2, 10));///print 10power of 2
+
+       let x=10;
+       if (true) {
+       	let y=20;
+       	var z=10;
+       	console.log(x+y+z);//output 40
+       }
+        console.log(x+z);//output 20
+        //y is invisibale here
+
+
+        const halve=function(n){
+        	return n/2;
+        }
+        console.log(halve(6)); //output 3
+
+
+        let launchMissiles = function() {
+            missileSystem.launch("now");
+         }; 
+         safeMode =true;
+
+        if (safeMode) 
+        { launchMissiles = function() {
+        console.log(launchMissiles());
+         }; 
+
+
+        const square1 = (x) => { return x * x; }; 
+        console.log(square1(2));
+
+
+ }
+
+
+ 
+   
+ 
+
+</script>
+</body>
+</html>

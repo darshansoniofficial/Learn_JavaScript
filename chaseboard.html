@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chaseboard</title>
+</head>
+<body>
+<button onclick="board()">click me for show chase board</button>
+
+    <script>
+	    
+	    function board(){
+	    	var row,col;
+	    	for (row=0; row<8; row++){
+	    		//document.write("# ");
+	    		//document.write('<br>');
+                for (col=0; col<8; col++) {
+                	if(col%2==0 && row%2!=0){
+
+                		document.write("#");
+                		//document.write('<br>');
+                	}else if(col%2!=0 && row%2==0){
+                		document.write("#");
+                	}else{
+                		document.write("...");
+                	}
+                	document.write("");
+                }
+	    	  document.write('<br>');
+	    	}
+	    }
+
+
+
+     </script>
+</body>
+</html>

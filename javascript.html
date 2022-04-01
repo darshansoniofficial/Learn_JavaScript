@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+
+<body>
+	<p id="demo1">click here and change the text</p>
+<button id="btn" onclick="whiLe()">Click here :D</button>
+
+<p onmouseover="loop()" style="font-size: 35px">i am for practice</p>
+<label>num1</label>
+     <input type="number" name="number1" id="num1" placeholder="Enter number1">
+     <br>
+     <label>num2</label>
+     <input type="number" name="number2"  id="num2" placeholder="Enter number2">
+     <h1 id="dum"></h1>
+
+<script>
+
+	function loop(){
+		for (var i=0; i<=12; i=i+1) {
+			console.log(i);
+	};
+       
+    function sum() {
+    	    let D = document.getElementById("num1");
+            let B = document.getElementById("num2");
+             
+             let S;
+             S =  D + B;
+             document.getElementById("dum").innerHTML = S;
+
+
+       };
+
+
+       function whiLe(){
+       	let number = 10;
+       	while(number<=12){
+       		number = number +1;
+       		console.log(number);
+       	}
+       	
+           let yourname;
+           do{
+           	yourname = prompt("who are you?");
+
+           }while (!yourname);
+           console.log("Hello"+ yourname)
+
+       };
+
+       function amazing(){
+       	if (true != false){
+       		console.log("surprise");
+       	}else if(1<2){
+       		console.log("always");
+       	}
+       };
+       function practice(){
+          let ten = 10;
+          console.log(ten*ten);
+          let light = "mood";
+          console.log(light);
+          let y=5;
+          y=y-1;
+          console.log(y);
+          console.log(null || "user") // → user 
+          console.log("Agnes" || "user") // → Agnes
+          var name = "Ayda"; 
+          const greeting = "Hello "; 
+          console.log(greeting + name);
+          prompt("Enter passcode");
+          
+		  console.log(Math.max(2, 4));
+		  console.log(Math.min(1, 4));
+		   f
+		  console.log("Your number is the square root of " + theNumber * theNumber);
+       };
+
+       function practice1() {
+
+       	       let theNumber = Number(prompt("Pick a number")); 
+
+       	       if (!Number.isNaN(theNumber)) { 
+
+       	       	console.log("Your number is the square root of " + theNumber * theNumber); 
+       	        
+       	          }else{
+       	          	console.log("why you don't enter number?");
+       	          }
+
+                if (1 + 1 == 2) console.log("It's true"); //you can also write a code like this
+
+
+       };
+
+       function pracrice3(){
+       	let thnumber = Number(prompt("Enter any number"))
+       	if (thnumber >100){
+       		console.log("number is bigger than 100");		
+       	}else if(thnumber<50){
+            console.log("you enter the number which is less than 50");
+       	}else{
+       		console.log("ohh i don'y care")
+       	}
+
+       };
+
+
+	function myFunction() {
+		    document.getElementById("demo1").innerHTML = "You change the text";
+		    console.log(1 + 1 == 2 && 10 * 10 > 50) 
+		    console.log(true? 1:2)
+		    console.log(false? 1:2)
+		    console.log("five" * 2)
+		    console.log(8 * null);
+		   
+	};
+
+	function clickon() {
+            document.getElementById("demo").innerHTML="welcome!";
+            document.getElementById("demo").style.fontSize = "60px";
+            document.getElementById("demo").style.color = "blue";
+          
+	};
+
+	function kon() {
+		    window.alert(5+60);
+		    console.log("jabru hoooooooo"); //show in console
+		    document.write(5+6);//change all delete html codes
+
+	};
+	function variables() {
+		    var x,y,z;
+		    x=6;
+		    y=6;
+		    z=x+y
+		   document.getElementById("demo").innerHTML = z;
+	};
+</script>
+</body>
+</html> 

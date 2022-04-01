@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fizzbuzz</title>
+</head>
+<body>
+	<h1 onclick="fizzBuzz()">Click me !!</h1>
+	<script>
+		function fizzBuzz(){
+           
+			let theNumber = Number(prompt("Pick a number")); 
+			if(theNumber%3==0 && theNumber%5==0)
+			{
+               document.write("fizzbuzz");
+
+			}else if (theNumber%3==0) {
+				document.write("fizz");
+
+			}else if (theNumber%5==0) {
+				document.write("Buzz");
+
+			}else{
+
+				document.write("invalid number ! please enter valid number");
+			}
+		};
+	</script>
+
+</body>
+</html>

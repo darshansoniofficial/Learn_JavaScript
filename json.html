@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Json</title>
+</head>
+<body>
+<script>
+	
+	let name=JSON.stringify({squirrel: false, events: ["weekend"]});
+	console.log(name);
+	//console.log(JSON.parse(string).events); =>output is ["weekend"]
+	//console.log(sum(range(1, 10)))
+	let total =0, count=0;
+	while(count<=10){
+		total =+ count;
+		count+= 1;
+	}
+	console.log(total);
+       
+	function letGonumber(n, action){
+		for(let i=0; i<n; i++){
+			action(i);
+		};
+	}
+
+	//letGonumber(10); ///always call function here n =10 see the output
+	letGonumber(3, console.log);
+
+	//this is new for us
+	let lables =[];
+	letGonumber(5, i => {lables.push('unit ${i+1}');
+         });
+	console.log(lables);
+
+	let horseShoe = "🐴👟"; 
+	console.log(horseShoe.length); 
+
+	    console.log(horseShoe[0]);
+	    //invalid halfcharacter
+	    console.log(horseShoe.charCodeAt(0)); 
+	    //code of the half-character
+	    console.log(horseShoe.codePointAt(0)); //  128052 (Actual code for horse emoji)
+         
+         let rabbit={};
+         rabbit.speak=function(line){
+         	console.log(  "the rabbit says " );
+         };
+         rabbit.speak("I'm alive");
+
+         let empty = {};
+         console.log(empty.toString);
+         console.log(empty.toString());
+         console.log(Object.getPrototypeOf({}) == Object.prototype);
+         //so that we can say line 51 or 52 is equal
+         
+
+</script>
+</body>
+</html>
